@@ -1,4 +1,4 @@
-package com.code.challenge.leetcode75.level1;
+package com.code.challenge.leetcode75.level1.prefix_sum;
 
 /**
  * Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).

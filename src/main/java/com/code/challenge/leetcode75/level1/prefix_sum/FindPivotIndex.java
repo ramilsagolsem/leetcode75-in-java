@@ -1,4 +1,4 @@
-package com.code.challenge.leetcode75.level1;
+package com.code.challenge.leetcode75.level1.prefix_sum;
 
 /**
  * Given an array of integers nums, calculate the pivot index of this array.

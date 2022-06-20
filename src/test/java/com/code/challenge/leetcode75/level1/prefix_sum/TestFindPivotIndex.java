@@ -1,5 +1,6 @@
-package com.code.challenge.leetcode75.level1;
+package com.code.challenge.leetcode75.level1.prefix_sum;
 
+import com.code.challenge.leetcode75.level1.prefix_sum.FindPivotIndex;
 import org.junit.Assert;
 import org.junit.Test;
 
