@@ -12,7 +12,7 @@ public class FindPivotIndex {
 
     /**
      * Algo:
-     * 1. Sum of left elements is tracked in variable left_sum
+     * 1. Sum of left elements is iteratively stored in variable left_sum
      * 2. Sum of right elements is always equal to [ sum of all elements - (sum of left elements + element at the current index) ]
      *
      * Time complexity : O(n)
@@ -21,16 +21,25 @@ public class FindPivotIndex {
      */
     public int pivotIndex(int[] nums) {
         int sum=0;
+        /**
+         * Stores the sum of all the elements
+         */
         for(int x: nums){
             sum += x;
         }
 
         int left_sum=0;
         for(int i=0; i<nums.length; i++){
+            /**
+             * sum of right elements is always equal to [ sum of all elements - (sum of left elements + element at the current index) ]
+             */
             int right_sum = sum - (left_sum + nums[i]);
             if(left_sum == right_sum){
                 return i;
             }
+            /**
+             * Stores the sum of left elements iteratively
+             */
             left_sum += nums[i];
         }
         return -1;
